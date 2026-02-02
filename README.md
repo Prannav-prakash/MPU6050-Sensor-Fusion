@@ -40,6 +40,6 @@ If you move the sensor during startup, your readings will be wrong until reset.
 
 set Baud rate to 115200
 
-if (abs(gyroZ) < 0.4) gyroZ = 0; removes random yaw movement 
+if (abs(gyroZ) < 1.5) gyroZ = 0; removes random yaw movement 
 
  OUTPUT : roll,pitch,yaw

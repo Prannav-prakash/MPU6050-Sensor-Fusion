@@ -41,7 +41,7 @@ void loop() {
 
   // 2. THE DRIFT FIX (Deadzone)
   // This stops the slow "ghost" turning when the sensor is still
-  if (abs(gyroZ) < 0.4) gyroZ = 0; 
+  if (abs(gyroZ) < 1.5) gyroZ = 0; 
 
   // 3. Accel Angles (Using your working convention)
   float accX = a.acceleration.x - ax_bias;
